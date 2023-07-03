@@ -253,3 +253,28 @@ footer {
 .socials a:hover i {
     color: #0c7db1;
 }
+
+@media only screen and (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .section {
+      padding-left: 0;
+    }
+  }
+  
+  /* Tablets and small desktop screens */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Larger desktop screens */
+  @media only screen and (min-width: 1024px) {
+    
+    body {
+      font-size: 18px;
+    }
+  }
