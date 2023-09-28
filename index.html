@@ -1,96 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>WebApp</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/img/favicon.jpg" type="image/x-icon">
+
+   <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>S.O.O</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-brand">WebWise</div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+   <header class="header" id="header">
+      <div class="header-container">
+          <!-- Favicon and Name -->
+          <div class="header-brand">
+              <img src="assets/img/favicon.jpg" alt="Favicon">
+              <h1>Shadrack Onyango</h1>
+          </div>
+  
+          <!-- Navigation Links -->
+          <nav class="header-nav">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact Me</a></li>
+              </ul>
+          </nav>
+  
+          <!-- Theme Switcher -->
+          <div class="header-theme-switch">
+              <label class="switch">
+                  <input type="checkbox" id="theme-switch" onclick="toggleTheme()">
+                  <span class="slider round"></span>
+              </label>
+          </div>
+      </div>
+  </header>
+  
 
-    <div class="wrapper">
-        <div class="sidebar">
-            <div class="profile">
-                <img src="Passport5.jpg" alt="profile-pic">
-                <h3>ONYANGO ODIPO</h3>
-                <p>Web Developer</p>
+    <main class="main">
+        <section class="home section section-card" id="home" data-sr="enter left over 1.5s">
+            <div class="home-content">
+               <div class="home-name-description">
+                  <h1 class="home-name"><b>Shadrack Onyango</b></h1>
+                  <p class="home-description">
+                        Frontend Developer with a passion for web development and design. Offering quality work resulting in creative projects.
+                  </p>
+               </div>
+
+               <div class="home-image">
+                  <img src="assets/img/Passport5.jpg" alt="Profile Image">
+               </div>
             </div>
-            <ul>
-                <li>
-                    <a href="#" class="active">
-                        <span class="icon"><i class="fas fa-home"></i></span>
-                        <span class="item">Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-project-diagram"></i></span>
-                        <span class="item">Projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-cog"></i></span>
-                        <span class="item">Settings</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-info-circle"></i></span>
-                        <span class="item">About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="icon"><i class="fas fa-handshake"></i></span>
-                        <span class="item">Hire Me</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="section">
-            <h1>Welcome to My Website</h1>
-            <p>Thank you for visiting. I am dedicated to providing innovative solutions and exceptional services to my clients.</p>
-            <div class="features">
-                <div class="feature">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Smart Automation</h3>
-                    <p>Smart Automation feature simplifies repetitive tasks, saving you time and effort. Streamline your workflow and boost productivity.</p>
+         </section>
+
+
+        <section class="about section section-card sr2" id="about" data-sr="enter bottom over 1.5s">
+         <h2 class="section-title-1">About Me.</h2>
+         <div class="about-content">
+             <div class="about-description">
+                 <p>
+                     <span class="about-highlight">Passionate about creating <b>Web Pages</b></span>
+                     I have experience and many clients are happy with the projects carried out.
+                 </p>
+             </div>
+             <div class="about-skills">
+               <p style="font-size: 30px;">
+                   <span class="about-highlight">Here's a glimpse of my expertise
+                  </span>
+               </p>
+               <div class="skill">
+                   <span class="skill-rating">★★★★★</span>
+                   <span class="skill-name">HTML</span>
+               </div>
+               <div class="skill">
+                   <span class="skill-rating">★★★★★</span>
+                   <span class="skill-name">CSS</span>
+               </div>
+               <div class="skill">
+                   <span class="skill-rating">★★★★★</span>
+                   <span class="skill-name">JavaScript</span>
+               </div>
+               <div class="skill">
+                   <span class="skill-rating">★★★★☆</span>
+                   <span class="skill-name">PHP</span>
+               </div>
+               <div class="skill">
+                   <span class="skill-rating">★★★★☆</span>
+                   <span class="skill-name">MySQL</span>
+               </div>
+               <div class="skill">
+                   <span class="skill-rating">★★★☆☆</span>
+                   <span class="skill-name">Python</span>
+               </div>
+           </div>
+              
+           
+         </div>
+         <div class="about-buttons">
+            <a class="button" href="tel:+254757963318">Contact Me</a>
+             <a class="button-ghost" href="https://www.linkedin.com/in/shadrack-onyango-729b0a213">LinkedIn</a>
+         </div>
+     </section>     
+
+        <section class="services section section-card sr3" data-sr="enter left over 1.5s">
+         <h2 class="section-title-2">Services.</h2>
+         <div class="services-list">
+             <div class="service">
+                 <h3>Web Design</h3>
+                 <p>Beautiful and elegant designs with interfaces that are intuitive, efficient, and pleasant to use for the user.</p>
+             </div>
+             <div class="service">
+                 <h3>Development</h3>
+                 <p>Custom web development tailored to your specifications, designed to provide a flawless user experience.</p>
+             </div>
+             <div class="service">
+                 <h3>Mobile App</h3>
+                 <p>Design and transform website projects into mobile apps to provide a seamless user experience.</p>
+             </div>
+         </div>
+     </section>     
+
+        <section class="projects section section-card sr4" id="projects" data-sr="enter bottom over 1.5s">
+         <h2 class="section-title-1">Projects.</h2>
+         <div class="projects-subtitle">
+             <span>Website</span>
+         </div>
+         <div class="projects-title">
+             <span>mylonfx.biz</span>
+         </div>
+         <p class="projects-description">
+             mylonfx.biz is a dynamic and user-friendly website that showcases my skills in web development. It features a modern design, responsive layout, and interactive elements to provide an engaging user experience. The website highlights my proficiency in PHP, MySQL, HTML, CSS, and JavaScript, demonstrating my ability to create fully functional web applications.
+         </p>
+         <a class="projects-link" href="https://mylonfx.biz/">View Project</a>
+         
+         <div class="projects-subtitle">
+             <span>App</span>
+         </div>
+         <div class="projects-title">
+             <span>Mobile App Name</span>
+         </div>
+         <p class="projects-description">
+            COMING SOON
+         </p>
+         <a class="projects-link" href="https://github.com/" disabled>View Project</a>
+     </section>
+     
+
+        
+        <section class="contact section section-card sr5" id="contact" data-sr="enter left over 1.5s">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 class="section-title-2">Contact Me.</h2>
+                    <p class="contact-description-1">
+                        Feel free to reach out to me via email or through my social networks. I'm here to help.
+                    </p>
+                    <p class="contact-description-2">
+                        Please provide your contact details below, and I'll get back to you as soon as possible.
+                    </p>
+                    <div class="contact-social-link">
+                     <a href="https://wa.me/254757963318" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>                    
+                        <a href="https://www.instagram.com/_soltaire/" target="_blank">
+                           <i class="fab fa-instagram"></i> Instagram
+                     </a>                       
+                     <a href="https://www.linkedin.com/in/shadrack-onyango-729b0a213" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                     </a>
+                    </div>
                 </div>
-                <br>
-                <div class="feature">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Creative Design Tools</h3>
-                    <p>Unleash your creativity with powerful design tools. Customize your projects and bring your ideas to life with ease.</p>
-                </div>
-                <br>
-                <div class="feature">
-                    <i class="fas fa-code"></i>
-                    <h3>Robust Development Framework</h3>
-                    <p>Experience cutting-edge development framework that empowers developers to build scalable and high-performance applications.</p>
+                <div class="contact-form">
+                    <h3 class="contact-title">Send Me A Message</h3>
+                    <form action="https://formsubmit.co/el/vadufu" method="POST" id="form">
+                        <div class="contact-form-field">
+                            <label class="contact-label" for="first-name">First Name</label>
+                            <input class="contact-input" type="text" id="first-name" placeholder="First Name" required>
+                        </div>
+                        <div class="contact-form-field">
+                            <label class="contact-label" for="email">Email Address</label>
+                            <input class="contact-input" type="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="contact-form-field">
+                            <label class="contact-label" for="subject">Subject</label>
+                            <input class="contact-input" type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="contact-form-field">
+                            <label class="contact-label" for="message">Message</label>
+                            <textarea class="contact-input" id="message" placeholder="Message" required></textarea>
+                        </div>
+                        <button class="contact-button" type="submit">Send Message</button>
+                    </form>
                 </div>
             </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <ul class="socials">
-                <li><a href="https://www.instagram.com/_soltaire" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/Sh_odipo" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="mailto:shadrackonyango30@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-                <li><a href="www.linkedin.com/in/shadrack-onyango-729b0a213" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+        </section>     
+    </main>
+
+    <footer class="footer">
+      <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+      </ul>
+      <p class="footer-copy">&#169; All Rights Reserved By <a href="#">Shadrack Onyango Odipo</a>.</p>
+  </footer>
+  
+   <button id="scroll-up-btn" class="scroll-up-btn">
+      <i class="ri-arrow-up-line"></i>
+   </button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
 </body>
 </html>
